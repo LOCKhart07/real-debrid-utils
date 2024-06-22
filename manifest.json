@@ -9,11 +9,16 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "*://real-debrid.com/downloader"
             ],
             "js": [
                 "season-downloader.js"
             ]
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "real-debrid-utils@lockhart.in"
+        }
+    }
 }
